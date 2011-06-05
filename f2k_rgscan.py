@@ -4,7 +4,7 @@ PLUGIN_NAME = u'Foobar2000 ReplayGain'
 PLUGIN_AUTHOR = u'Johannes Weißl'
 PLUGIN_DESCRIPTION = '''Analyse your albums using the foobar2000 ReplayGain scanner.'''
 PLUGIN_VERSION = "0.1"
-PLUGIN_API_VERSIONS = ["0.10"]
+PLUGIN_API_VERSIONS = ["0.10", "0.15"]
 
 import os
 import sys
