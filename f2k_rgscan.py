@@ -24,11 +24,15 @@ winepath = ['winepath']
 wine = ['wine']
 
 def get_foobar2000_path():
+    paths = []
     if os.name == 'posix':
-        p = os.path.expanduser('~/.wine/drive_c/Program Files/foobar2000/foobar2000.exe')
+        paths.extend([os.path.expanduser('~/.wine/drive_c/Program Files/foobar2000/foobar2000.exe'), '/usr/share/foobar2000/foobar2000.exe'])
     else:
-        p = 'C:/Program Files/foobar2000/foobar2000.exe'
-    return p if os.path.exists(p) else ''
+        paths.extend(['C:/Program Files/foobar2000/foobar2000.exe'])
+    for p in paths:
+        if os.path.exists(p)
+            return p
+    return ''
 
 class Ui_Foobar2000ReplayGainOptionsPage(object):
     def setupUi(self, Foobar2000ReplayGainOptionsPage):
