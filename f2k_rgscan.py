@@ -30,7 +30,7 @@ def get_foobar2000_path():
     else:
         paths.extend(['C:/Program Files/foobar2000/foobar2000.exe'])
     for p in paths:
-        if os.path.exists(p)
+        if os.path.exists(p):
             return p
     return ''
 
